@@ -1,3 +1,50 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$background-color: Ivory;
+$text-color: DarkSlateGray;
+$sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif: Baskerville,Georgia, "Times New Roman", serif;
+$link-color: #0000aa;
+
+body { background-color: $background-color;color:$text-color; font-family:$serif;}
+
+
+
+h1 {
+    background-color: DarkSlateGray;
+    color: Ivory;
+    font-size: 250%;
+}
+
+h2 {
+    color: DarkCyan;
+    font-style: italic;
+    font-size: 200%;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+/* unvisited link */
+a:link {
+    color: DarkRed;
+}
+
+/* visited link */
+a:visited {
+    color: DarkCyan;
+}
+
+/* mouse over link */
+a:hover {
+    color: LightSlateGray;
+}
+
+/* selected link */
+a:active {
+    color: LightSlateGray;
+}
+
