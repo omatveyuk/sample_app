@@ -23,7 +23,6 @@ class StaticPagesControllerTest < ActionController::TestCase
     get :contact
     assert_response :success
     assert_select "title", "Contact | CS 232 Ruby on Rails Development"
-    assert_select "h1", "Contact"
   end
   
 end

@@ -10,49 +10,8 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require 'static_pages.css.scss'
  *= require_tree .
- *= require_self
+ 
  */
-body {
-    background-color: Ivory;
-    color: DarkSlateGray;
-    font-family: "Times New Roman", Times, serif;
-}
-
-h1 {
-    background-color: DarkSlateGray;
-    color: Ivory;
-    font-size: 250%;
-}
-
-h2 {
-    color: DarkCyan;
-    font-style: italic;
-    font-size: 200%;
-}
-
-p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-} 
-
-/* unvisited link */
-a:link {
-    color: DarkRed;
-}
-
-/* visited link */
-a:visited {
-    color: DarkCyan;
-}
-
-/* mouse over link */
-a:hover {
-    color: LightSlateGray;
-}
-
-/* selected link */
-a:active {
-    color: LightSlateGray;
-} 
 
