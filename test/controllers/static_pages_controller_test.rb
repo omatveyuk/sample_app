@@ -4,7 +4,7 @@ class StaticPagesControllerTest < ActionController::TestCase
   test "should get home" do
     get :home
     assert_response :success
-    assert_select "title", "Home | CS 232 Ruby on Rails Development"
+    assert_select "title", "CS 232 Ruby on Rails Development"
   end
 
   test "should get help" do
@@ -23,7 +23,7 @@ class StaticPagesControllerTest < ActionController::TestCase
     get :contact
     assert_response :success
     assert_select "title", "Contact | CS 232 Ruby on Rails Development"
-    assert_select "h1", "Contactsss"
+    assert_select "h1", "Contact"
   end
   
 end
