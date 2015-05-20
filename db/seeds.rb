@@ -12,6 +12,13 @@ User.create!(name:  "Example User",
              admin: true,
              activated: true,
              activated_at: Time.zone.now)
+             
+User.create!(name:  "Some Dude",
+             email: "dputnam@ccsf.edu",
+             password:              "t0pS3cret!",
+             password_confirmation: "t0pS3cret!",
+             activated: true,
+             activated_at: Time.zone.now)
 
 
 99.times do |n|
