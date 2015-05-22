@@ -7,7 +7,10 @@ module SessionsHelper
   
   # Remembers a user in a persistent session.
   def remember(user)
+    logger.debug "Inside remember (session_helper): #{user}"
     user.remember
+    logger.debug "Inside remember (session_helper): jsut finished calling remember1"
+    
     cookies.permanent.signed[:user_id] = user.id
     cookies.permanent[:remember_token] = user.remember_token
   end
@@ -52,6 +55,11 @@ module SessionsHelper
   
   # Redirects to stored location (or to the default).
   def redirect_back_or(default)
+    logger.debug "inside redirect_back_or"
+    logger.debug "Here comes default: #{default}"
+    #logger.debug "Here comes forwarding_url: #{forwarding_url}"
+    logger.debug "Here comes session: #{session[:forwarding_url]}"
+    
     redirect_to(session[:forwarding_url] || default)
     session.delete(:forwarding_url)
   end
