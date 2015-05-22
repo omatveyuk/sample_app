@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 #  get 'sessions/new'
 
   root             'static_pages#home'
+  get 'hello_world' => 'final_exam_controller#hello_world'
   get 'help'    => 'static_pages#help'
   get 'about'   => 'static_pages#about'
   get 'contact' => 'static_pages#contact'
